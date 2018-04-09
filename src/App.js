@@ -1,37 +1,35 @@
 import React, { Component } from "react";
-import FriendCard from "./components/FriendCard";
+import CrowCard from "./components/CrowCard";
 import Wrapper from "./components/Wrapper";
 import Title from "./components/Title";
-import friends from "./friends.json";
+import crows from "./crows.json";
 import "./App.css";
 
 class App extends Component {
-  // Setting this.state.friends to the friends json array
+  // Setting this.state.crows to the crows json array
   state = {
-    friends
+    crows
   };
 
-  removeFriend = id => {
-    // Filter this.state.friends for friends with an id not equal to the id being removed
-    const friends = this.state.friends.filter(friend => friend.id !== id);
-    // Set this.state.friends equal to the new friends array
-    this.setState({ friends });
+  removeCrow = id => {
+    // Filter this.state.crows for crows with an id not equal to the id being removed
+    const crows = this.state.crows.filter(crow => crow.id !== id);
+    // Set this.state.crows equal to the new crows array
+    this.setState({ crows });
   };
 
-  // Map over this.state.friends and render a FriendCard component for each friend object
+  // Map over this.state.crows and render a CrowCard component for each crow object
   render() {
     return (
       <Wrapper>
-        <Title>Friends List</Title>
-        {this.state.friends.map(friend => (
-          <FriendCard
-            removeFriend={this.removeFriend}
-            id={friend.id}
-            key={friend.id}
-            name={friend.name}
-            image={friend.image}
-            occupation={friend.occupation}
-            location={friend.location}
+        <Title>Crows List</Title>
+        {this.state.crows.map(crow => (
+          <CrowCard
+            removeCrow={this.removeCrow}
+            id={crow.id}
+            key={crow.id}
+            name={crow.name}
+            image={crow.image}
           />
         ))}
       </Wrapper>
