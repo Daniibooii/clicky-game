@@ -18,6 +18,16 @@ class App extends Component {
     this.setState({ crows });
   };
 
+// this will shuffle the cards //
+  /* componentDidMount() {
+      // The elements are in the DOM, initialize a shuffle instance.
+      this.shuffle = new Shuffle(this.element, {
+        itemSelector: '.photo-item',
+        sizer: this.sizer,
+      });
+      */
+
+
   // Map over this.state.crows and render a CrowCard component for each crow object
   render() {
     return (
