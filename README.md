@@ -20,13 +20,13 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 You can find the most recent version of this guide [here](https://github.com/facebookincubator/create-react-app/blob/master/packages/react-scripts/template/README.md).
 
 ## Project Goals
-Create a memory game with React; break up the application's UI into components, manage component state, respond to user events.
-Create React application using Create React App.
-Render different images; each image should listen for click events.
-Keep track of the user's score.
-Increment user's score when image clicked for first time.
-Reset score to zero if image clicked again.
-Every time an image is clicked, the shuffle images in a random order.
-Restart once user's score returns to zero.
+Create a memory game with React; break up the application's UI into components, manage component state, respond to user events.<br>
+Create React application using Create React App.<br>
+Render different images; each image should listen for click events.<br>
+Keep track of the user's score.<br>
+Increment user's score when image clicked for first time.<br>
+Reset score to zero if image clicked again.<br>
+Every time an image is clicked, the shuffle images in a random order.<br>
+Restart once user's score returns to zero.<br>
 
 To deploy to Github, see: https://github.com/facebook/create-react-app/blob/master/packages/react-scripts/template/README.md#deployment
